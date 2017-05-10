@@ -49,7 +49,7 @@ public class MB {
                 request.getSession().setAttribute("sesionusuario",id);
                 tipo = login.getType();
                 if(tipo.equals("Student")){
-                    fm = new FacesMessage(FacesMessage.SEVERITY_INFO,"Welcome"+login.getName(),null);
+                    fm = new FacesMessage(FacesMessage.SEVERITY_INFO,"Welcome my friend"+login.getName(),null);
                     fc.addMessage(null, fm);
                     return "Students";
                 }
